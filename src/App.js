@@ -1,5 +1,7 @@
 // src/App.js
 // ...
+import logo from "./logo.svg";
+import "./App.css";
 import Title from "./components/Title";
 
 function App() {
@@ -7,10 +9,12 @@ function App() {
     <div className="App">
       <main>
         <Title />
+        <h1>Hello World!</h1>
+        <p>React is cool!</p>
       </main>
 
       <header className="App-header">
-        <img className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
