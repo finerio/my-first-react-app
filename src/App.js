@@ -38,37 +38,22 @@ const all_pokemon = [
 
 function App() {
   return (
-    <div className="App">
-      <main>
-        <Title content="Some Simple Title" /> <h1>Hello World!</h1>
+    <main className="container my-5">
+      <Title content="Some Simple Title" />
+      <div className="row">
         {all_pokemon.map((pokemon, index) => (
-          <Pokemon
-            key={index}
-            name={pokemon.name}
-            weight={pokemon.weight}
-            awesome={pokemon.awesome}
-            terrifying={pokemon.terrifying}
-            abilities={pokemon.abilities}
-          />
-        ))}{" "}
-        <p>React is cool!</p>
-      </main>
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div key={index} className="col-md-6 col-lg-4">
+            <Pokemon
+              name={pokemon.name}
+              weight={pokemon.weight}
+              awesome={pokemon.awesome}
+              terrifying={pokemon.terrifying}
+              abilities={pokemon.abilities}
+            />
+          </div>
+        ))}
+      </div>
+    </main>
   );
 }
 
