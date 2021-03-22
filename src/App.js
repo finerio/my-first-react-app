@@ -1,6 +1,6 @@
 // src/App.js
 // ...
-import Title from "./components/Title";
+import Title from "./components/Title.js";
 
 function App() {
   return (
