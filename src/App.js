@@ -1,6 +1,6 @@
 // src/App.js
 // ...
-import Title from "./Title.js";
+import Title from "./components/Title";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       </main>
 
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
