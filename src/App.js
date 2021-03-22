@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Title />
-        <h1>Hello World!</h1>
+        <Title content="Some Simple Title" /> <h1>Hello World!</h1>
         <p>React is cool!</p>
       </main>
 
